@@ -1,0 +1,135 @@
+$color-white: #ffffff
+$color-black: #000000
+$top-bg-color: #33495f
+$banner-color: #2b3e51
+$input-brd-color: #4ca297
+
+body
+  .top-bar
+    background-color: $top-bg-color
+    padding: 5px 0 12px 0
+    .logo
+      img
+        width: 144px
+    .top-right-dropmenu
+      display: inline-block
+      .btn
+        background-color: $top-bg-color
+        color: #c5cbd2
+        font-size: 14px
+        text-shadow: 1px 1px $color-black !important
+        font-weight: 500
+        letter-spacing: 0.2px
+        padding: 0 0 0 25px
+        span
+          background-color: $top-bg-color
+      .dropdown-menu
+        z-index: 1001
+        li
+          display: block
+  #masthead
+    background-color: $banner-color
+    .nav
+      li
+        a
+          padding-top: 3px
+          padding-bottom: 3px
+          color: #a2aab8
+          font-size: 12px
+          font-weight: 500
+          padding-right: 18px
+          &:before
+            display: none
+          &:hover
+            color: $color-white
+          &:first-child
+            padding-left: 0  
+    &.navbar
+      min-height: 20px
+    &.navbar-scrolled
+      min-height: 20px
+      .navbar-nav
+        li
+          a
+            padding-top: 10px
+            padding-bottom: 10px
+  .banner
+    background-color: $banner-color
+    min-height: 292px
+    background: asset_url('banner-bg.jpg')
+    .banner-title
+      color: $color-white
+      text-shadow: 2px 1px #505d89
+      h1
+        font-size: 58px
+        margin-bottom: 24px
+  .search-box
+    background-color: $banner-color
+    min-height: 108px
+    padding: 22px 0
+    .search-form
+      .hide-text
+        color: #2B3D51
+      .btn-success
+        background-color: #15bf9a !important
+        font-size: 13px
+      margin: 0 5%
+      label
+        font-size: 12px
+        color: #a1b1c1
+      input
+        border: 1px solid $input-brd-color
+        color: #81807c
+        height: 31px
+      .input-group-addon
+        border: 1px solid $input-brd-color
+        background: #1db9a1
+        i
+          color: $color-white
+      .dropdown-menu
+        z-index: 1001
+        min-width: 105px    
+      .input-group-btn
+        button
+          border: 1px solid $input-brd-color
+          height: 31px
+          line-height: 15px
+          background-color: #1db9a1 !important
+          .caret
+            background: none
+            color: $color-white
+      .row
+        .col-md-4
+          max-width: 344px
+        .row
+          margin-left: 0
+
+      .no-padding
+        padding: 0 5px !important
+
+  @media screen and (max-width: 990px)
+    .navbar-scrolled 
+      .navbar-toggle
+        margin-bottom: 6px
+        margin-top: 6px
+    .navbar-toggle
+      margin-bottom: 6px
+      margin-top: 6px
+      .icon-bar
+        background-color: $color-white
+    .search-box
+      .search-form
+        .no-padding
+          padding: 0 15px !important
+        .row
+          .row
+            margin-left: -15px
+          .col-md-4
+            max-width: 100%
+
+  
+  @media screen and (max-width: 480px)
+    .banner
+      .banner-title
+        h1
+          font-size: 36px          

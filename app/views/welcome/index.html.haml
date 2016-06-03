@@ -1,0 +1,95 @@
+%section.banner
+  .container
+    .text-center
+      .banner-title.element-tall-top
+        %h1.light
+          Welcome 
+          %strong Admin
+        %h3.light
+          Enjoy The Best Rates For Your Next Hotal Booking  
+
+
+%section#home.search-box
+  .container
+    %form.search-form
+      .row
+        .col-md-4.no-padding
+          %label
+            Where are you want to go?
+          .form-group
+            %input.form-control{:placeholder => "Search for...", :type => "text"}
+        .col-md-2.no-padding
+          %label
+            Check-in
+          .input-group
+            %input.form-control{"aria-label" => "Amount (to the nearest dollar)", :type => "text"}
+            %span.input-group-addon
+              %i.fa.fa-calendar
+        .col-md-2.no-padding
+          %label
+            Check-out
+          .input-group
+            %input.form-control{"aria-label" => "Amount (to the nearest dollar)", :type => "text"}
+            %span.input-group-addon
+              %i.fa.fa-calendar
+        .col-md-4.no-padding
+          .row
+            .col-md-4.no-padding
+              %label
+                Rooms
+              .input-group
+                %input.form-control{"aria-label" => "Text input with segmented button dropdown", :type => "text"}
+                  .input-group-btn
+                    %button.btn.btn-default.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+                      %span.caret
+                      %span.sr-only Toggle Dropdown
+                    %ul.dropdown-menu.dropdown-menu-right
+                      %li
+                        %a{:href => "#"} 1
+                      %li
+                        %a{:href => "#"} 2
+                      %li
+                        %a{:href => "#"} 3       
+            .col-md-4.no-padding
+              %label
+                Guests
+              .input-group
+                %input.form-control{"aria-label" => "Text input with segmented button dropdown", :type => "text"}
+                  .input-group-btn
+                    %button.btn.btn-default.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+                      %span.caret
+                      %span.sr-only Toggle Dropdown
+                    %ul.dropdown-menu.dropdown-menu-right
+                      %li
+                        %a{:href => "#"} 1
+                      %li
+                        %a{:href => "#"} 2
+                      %li
+                        %a{:href => "#"} 3        
+            .col-md-4.no-padding
+              %label.hide-text
+                text
+              %button.btn.btn-success.btn-block
+                Search       
+
+%section#services.section.swatch-white
+  .container
+    .row
+      .col-md-12
+        %header.text-center.element-no-bottom.os-animation.condensed{"data-os-animation" => "fadeIn", "data-os-animation-delay" => "0s"}
+          %h2.element-medium-top
+            Top Us Destinations
+        .row{"data-os-animation" => "", "data-os-animation-delay" => ""}
+          .col-md-4
+            .element-medium-top.element-medium-bottom.text-center.os-animation{"data-os-animation" => "fadeInUp", "data-os-animation-delay" => ".0s"}
+              = image_tag "destinations-image1.jpg"
+              
+          .col-md-4
+            .element-medium-top.element-medium-bottom.text-center.os-animation{"data-os-animation" => "fadeInUp", "data-os-animation-delay" => ".3s"}
+              = image_tag "destinations-image2.jpg"
+             
+          .col-md-4
+            .element-medium-top.element-medium-bottom.text-center.os-animation{"data-os-animation" => "fadeInUp", "data-os-animation-delay" => ".6s"}
+              = image_tag "destinations-image3.jpg"
+             
+          

@@ -1,0 +1,51 @@
+.top-bar
+  .container
+    .pull-left
+      = link_to root_path, class: 'logo' do
+        = image_tag "logo.svg"
+    .pull-right
+      .dropdown.top-right-dropmenu
+        %button#dropdownMenu1.btn.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+          = image_tag "flag-image.jpg" 
+          English
+          %span.caret
+        %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
+          %li
+            %a{:href => "#"} English
+          %li
+            %a{:href => "#"} English
+          %li
+            %a{:href => "#"} English
+      .dropdown.top-right-dropmenu
+        %button#dropdownMenu1.btn.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"} 
+          \&euro; Euro
+          %span.caret
+        %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
+          %li
+            %a{:href => "#"} &euro; Euro
+          %li
+            %a{:href => "#"} &euro; Euro
+          %li
+            %a{:href => "#"} &euro; Euro           
+
+#masthead.navbar.navbar-static-top.navbar-sticky.underline.swatch-white{:role => "banner"}
+  .container
+    .navbar-header
+      %button.navbar-toggle.collapsed{"data-target" => ".main-navbar", "data-toggle" => "collapse", :type => "button"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+    %nav.collapse.navbar-collapse.main-navbar{:role => "navigation"}
+      .menu-one-page-container
+        %ul#menu-one-page.nav.navbar-nav
+          %li.active
+            %a{:href => "#home"} Home
+          %li
+            %a{:href => "#Bookings"} Your Bookings
+          %li
+            %a{:href => "#Profiles"} Your Profiles
+          %li
+            %a{:href => "#Admin"} Admin
+        %ul#menu-one-page.nav.navbar-nav.navbar-right
+          %li.active
+            %a{:href => "#home"} Logout   
